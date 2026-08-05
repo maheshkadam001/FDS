@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Cafe & Restaurant | Craft Coffee & Artisan Dining</title>
+    <meta name="description" content="Experience artisanal coffee, freshly baked pastries, and gourmet dining in a cozy modern cafe environment. Order online or visit Aroma Cafe today.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         1. RESPONSIVE NAVBAR
+         ========================================== -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="bi bi-cup-hot-fill"></i>
+                <span>Aroma Cafe</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="btn btn-cafe-primary" data-bs-toggle="modal" data-bs-target="#orderModal">
+                        <i class="bi bi-cart-plus me-1"></i> Order Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ==========================================
+         2. HERO SECTION
+         ========================================== -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <span class="section-badge mb-3">
+                        <i class="bi bi-stars me-1"></i> Welcome to Aroma Cafe
+                    </span>
+                    <h1 class="hero-title">
+                        Taste the Art of <span class="text-warning" style="color: var(--accent-orange) !important;">Craft Coffee</span> & Fine Dining
+                    </h1>
+                    <p class="hero-text">
+                        Immerse yourself in a cozy, warm atmosphere. We serve 100% ethically sourced single-origin coffee beans, artisanal sourdough pastries, and chef-curated gourmet meals daily.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-4">
+                        <a href="#menu" class="btn btn-cafe-primary">
+                            Explore Menu <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <button class="btn btn-cafe-outline" data-bs-toggle="modal" data-bs-target="#orderModal">
+                            <i class="bi bi-bag-check me-2"></i> Quick Order
+                        </button>
+                    </div>
+
+                    <!-- Hero Stats -->
+                    <div class="row hero-stats g-3">
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <h3>100%</h3>
+                                <p>Organic Beans</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <h3>25+</h3>
+                                <p>Chef Recipes</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="stat-item">
+                                <h3>4.9 ★</h3>
+                                <p>Customer Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="hero-img-container">
+                        <img src="images/hero.jpg" alt="Aroma Cafe Warm Interior" class="hero-img img-fluid">
+                        <div class="hero-floating-card">
+                            <div class="floating-icon">
+                                <i class="bi bi-clock-history"></i>
+                            </div>
+                            <div>
+                                <h6 class="mb-0 fw-bold" style="color: var(--primary-brown);">Freshly Roasted</h6>
+                                <small class="text-muted">Served Hot & Fresh 7 Days a Week</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         3. ABOUT US SECTION
+         ========================================== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="about-img-box">
+                        <img src="images/about.jpg" alt="Barista Crafting Latte Art" class="about-img img-fluid">
+                        <div class="experience-badge">
+                            <h4>6+</h4>
+                            <p>Years of Passion</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <span class="section-badge">Our Story</span>
+                    <h2 class="section-title">Crafting Memorable Moments & Unmatched Flavors</h2>
+                    <div class="title-underline ms-0"></div>
+                    
+                    <p class="text-muted mb-4">
+                        Founded in 2018, Aroma Cafe started with a simple belief: coffee isn't just a morning routine—it's a sensory experience. Our master baristas manually select and roast micro-lot beans from sustainable farms around the world.
+                    </p>
+
+                    <div class="feature-list-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-award-fill"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Award-Winning Artisanal Coffee</h5>
+                            <p class="text-muted small mb-0">Crafted by certified baristas using state-of-the-art espresso extraction techniques.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-list-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-egg-fried"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Fresh Farm-to-Table Kitchen</h5>
+                            <p class="text-muted small mb-0">Organic sourdough breads, local seasonal produce, and homemade sauces prepared daily.</p>
+                        </div>
+                    </div>
+
+                    <div class="feature-list-item">
+                        <div class="feature-icon">
+                            <i class="bi bi-wifi"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Cozy Ambience & High-Speed Wi-Fi</h5>
+                            <p class="text-muted small mb-0">Designed for casual catchups, quiet work sessions, and romantic evening dinners.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-2">
+                        <a href="#contact" class="btn btn-cafe-primary">Visit Us Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         4. MENU SECTION (6 FOOD CARDS)
+         ========================================== -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Chef's Selection</span>
+                <h2 class="section-title">Explore Our Delicious Menu</h2>
+                <div class="title-underline"></div>
+                
+                <!-- Category Filter Buttons -->
+                <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
+                    <button class="menu-filter-btn active" data-filter="all">All Items</button>
+                    <button class="menu-filter-btn" data-filter="coffee">Coffee & Drinks</button>
+                    <button class="menu-filter-btn" data-filter="bakery">Bakery & Pastries</button>
+                    <button class="menu-filter-btn" data-filter="mains">Gourmet Mains</button>
+                    <button class="menu-filter-btn" data-filter="desserts">Desserts</button>
+                </div>
+            </div>
+
+            <!-- 6 Food Cards Grid -->
+            <div class="row g-4" id="menuItemsGrid">
+                
+                <!-- Item 1 -->
+                <div class="col-lg-4 col-md-6 menu-item-col" data-category="coffee">
+                    <div class="card menu-card">
+                        <div class="menu-img-wrapper">
+                            <img src="images/menu-1.jpg" alt="Artisanal Cappuccino" class="menu-img">
+                            <span class="category-tag">Coffee</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="menu-price">$4.50</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-dark ms-1 small fw-bold">4.9</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Artisanal Cappuccino</h5>
+                            <p class="card-text">Rich double espresso topped with velvety steamed milk foam and silky heart latte art.</p>
+                            <button class="btn btn-cafe-outline w-100 mt-auto" onclick="quickOrder('Artisanal Cappuccino', '$4.50')">
+                                <i class="bi bi-cart-plus me-1"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-lg-4 col-md-6 menu-item-col" data-category="mains">
+                    <div class="card menu-card">
+                        <div class="menu-img-wrapper">
+                            <img src="images/menu-2.jpg" alt="Gourmet Avocado Toast" class="menu-img">
+                            <span class="category-tag">Mains</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="menu-price">$11.50</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span class="text-dark ms-1 small fw-bold">4.8</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Gourmet Avocado Toast</h5>
+                            <p class="card-text">Smashed organic avocado on toasted sourdough topped with a poached egg & microgreens.</p>
+                            <button class="btn btn-cafe-outline w-100 mt-auto" onclick="quickOrder('Gourmet Avocado Toast', '$11.50')">
+                                <i class="bi bi-cart-plus me-1"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-lg-4 col-md-6 menu-item-col" data-category="bakery">
+                    <div class="card menu-card">
+                        <div class="menu-img-wrapper">
+                            <img src="images/menu-3.jpg" alt="French Butter Croissant" class="menu-img">
+                            <span class="category-tag">Bakery</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="menu-price">$4.00</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-dark ms-1 small fw-bold">5.0</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">French Butter Croissant</h5>
+                            <p class="card-text">Freshly baked golden, flaky croissant made with authentic French butter & homemade jam.</p>
+                            <button class="btn btn-cafe-outline w-100 mt-auto" onclick="quickOrder('French Butter Croissant', '$4.00')">
+                                <i class="bi bi-cart-plus me-1"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-lg-4 col-md-6 menu-item-col" data-category="mains">
+                    <div class="card menu-card">
+                        <div class="menu-img-wrapper">
+                            <img src="images/menu-4.jpg" alt="Creamy Truffle Fettuccine" class="menu-img">
+                            <span class="category-tag">Mains</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="menu-price">$16.50</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-dark ms-1 small fw-bold">4.9</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Creamy Truffle Fettuccine</h5>
+                            <p class="card-text">Hand-cut fettuccine tossed in rich white truffle cream sauce and shaved parmesan cheese.</p>
+                            <button class="btn btn-cafe-outline w-100 mt-auto" onclick="quickOrder('Creamy Truffle Fettuccine', '$16.50')">
+                                <i class="bi bi-cart-plus me-1"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-lg-4 col-md-6 menu-item-col" data-category="desserts">
+                    <div class="card menu-card">
+                        <div class="menu-img-wrapper">
+                            <img src="images/menu-5.jpg" alt="Fluffy Soufflé Pancakes" class="menu-img">
+                            <span class="category-tag">Desserts</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="menu-price">$12.00</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <span class="text-dark ms-1 small fw-bold">4.9</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Fluffy Soufflé Pancakes</h5>
+                            <p class="card-text">Japanese style cloud-like souffle pancakes drizzled with organic maple syrup & berries.</p>
+                            <button class="btn btn-cafe-outline w-100 mt-auto" onclick="quickOrder('Fluffy Soufflé Pancakes', '$12.00')">
+                                <i class="bi bi-cart-plus me-1"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="col-lg-4 col-md-6 menu-item-col" data-category="coffee">
+                    <div class="card menu-card">
+                        <div class="menu-img-wrapper">
+                            <img src="images/menu-6.jpg" alt="Iced Caramel Macchiato" class="menu-img">
+                            <span class="category-tag">Coffee</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="menu-price">$5.50</span>
+                                <div class="rating-stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                    <span class="text-dark ms-1 small fw-bold">4.7</span>
+                                </div>
+                            </div>
+                            <h5 class="card-title">Iced Caramel Macchiato</h5>
+                            <p class="card-text">Chilled espresso over whole milk and vanilla syrup, drizzled with buttery caramel sauce.</p>
+                            <button class="btn btn-cafe-outline w-100 mt-auto" onclick="quickOrder('Iced Caramel Macchiato', '$5.50')">
+                                <i class="bi bi-cart-plus me-1"></i> Add to Order
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         5. SERVICES SECTION (3 SERVICE CARDS)
+         ========================================== -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Why Choose Us</span>
+                <h2 class="section-title">Our Premium Services</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center">
+                        <div class="service-icon-box mx-auto">
+                            <i class="bi bi-cup-straw"></i>
+                        </div>
+                        <h4 class="mb-3">Dine-In Experience</h4>
+                        <p class="text-muted">
+                            Relax in our warm, beautifully designed space featuring comfortable seating, soft jazz background music, and free high-speed Wi-Fi.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center">
+                        <div class="service-icon-box mx-auto">
+                            <i class="bi bi-bag-heart"></i>
+                        </div>
+                        <h4 class="mb-3">Takeaway & Express Delivery</h4>
+                        <p class="text-muted">
+                            On the go? Order online for quick pickup or eco-friendly doorstep delivery. Your coffee stays piping hot in our insulated thermal cups.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="col-lg-4 col-md-6 mx-auto">
+                    <div class="service-card text-center">
+                        <div class="service-icon-box mx-auto">
+                            <i class="bi bi-cake2"></i>
+                        </div>
+                        <h4 class="mb-3">Private Events & Catering</h4>
+                        <p class="text-muted">
+                            Host your birthday parties, corporate breakfast meetings, or coffee workshops. Custom menu setups and dedicated barista services available.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         6. CUSTOMER TESTIMONIALS (CAROUSEL)
+         ========================================== -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Customer Reviews</span>
+                <h2 class="section-title text-white">What Our Guests Say</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Carousel -->
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner pb-5">
+                    
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="testimonial-card text-center">
+                            <div class="rating-stars mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-quote">
+                                "Aroma Cafe has hands down the best cappuccino in town! The cozy warm ambience makes it my absolute favorite place to relax or work on my laptop every weekend."
+                            </p>
+                            <h5 class="text-white mb-1">Sophia Martinez</h5>
+                            <small class="text-warning">Graphic Designer & Regular Guest</small>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center">
+                            <div class="rating-stars mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-quote">
+                                "The Truffle Fettuccine and fresh butter croissants are out of this world! Impeccable taste, quick friendly service, and a truly welcoming vibe."
+                            </p>
+                            <h5 class="text-white mb-1">James Robertson</h5>
+                            <small class="text-warning">Food Blogger</small>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="carousel-item">
+                        <div class="testimonial-card text-center">
+                            <div class="rating-stars mb-3">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="testimonial-quote">
+                                "We hired Aroma Cafe for our corporate team breakfast. The coffee bar setup and hot soufflé pancakes were an absolute hit with everyone!"
+                            </p>
+                            <h5 class="text-white mb-1">Emily Chen</h5>
+                            <small class="text-warning">Operations Director</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         7. CONTACT SECTION WITH FORM
+         ========================================== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">Reserve a Table or Send a Message</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Left: Contact Details -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card">
+                        <h3>Visit Aroma Cafe</h3>
+                        <p class="text-white-50 mb-4">Have questions or want to reserve a table for your group? Reach out to us or stop by for a hot cup of coffee.</p>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Location</h6>
+                                <p class="text-white-50 small mb-0">124 Espresso Boulevard, Downtown District, City 10001</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Phone & Reservation</h6>
+                                <p class="text-white-50 small mb-0">+1 (555) 234-5678</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Email Address</h6>
+                                <p class="text-white-50 small mb-0">hello@aromacafe.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div>
+                                <h6 class="text-white mb-1">Opening Hours</h6>
+                                <p class="text-white-50 small mb-0">Monday – Sunday: 7:00 AM – 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Responsive Contact Form -->
+                <div class="col-lg-7">
+                    <div class="contact-form-card">
+                        <h4 class="mb-3">Send Us a Message</h4>
+                        <div id="formAlert"></div>
+
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="contactName" class="form-label fw-medium">Your Name <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control form-control-custom" id="contactName" placeholder="e.g. John Doe">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label fw-medium">Your Email <span class="text-danger">*</span></label>
+                                    <input type="email" class="form-control form-control-custom" id="contactEmail" placeholder="e.g. john@example.com">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactSubject" class="form-label fw-medium">Subject / Event Type</label>
+                                    <input type="text" class="form-control form-control-custom" id="contactSubject" placeholder="e.g. Table Reservation / General Inquiry">
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label fw-medium">Message <span class="text-danger">*</span></label>
+                                    <textarea class="form-control form-control-custom" id="contactMessage" rows="5" placeholder="Write your message here..."></textarea>
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <button type="submit" class="btn btn-cafe-primary w-100">
+                                        <i class="bi bi-send-fill me-2"></i> Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         8. FOOTER
+         ========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Brand Info -->
+                <div class="col-lg-4 col-md-6">
+                    <a class="footer-brand d-inline-flex align-items-center gap-2 mb-3" href="#home">
+                        <i class="bi bi-cup-hot-fill text-warning"></i>
+                        <span>Aroma Cafe</span>
+                    </a>
+                    <p class="mb-4">
+                        Your daily destination for master-roasted coffee, handmade fresh bakery treats, and delightful gourmet meals.
+                    </p>
+                    <div class="d-flex">
+                        <a href="#" class="social-icon-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social-icon-btn" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Our Menu</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Working Hours</h5>
+                    <ul class="list-unstyled text-muted mb-0">
+                        <li class="mb-2"><strong class="text-white">Mon – Fri:</strong> 7:00 AM – 10:00 PM</li>
+                        <li class="mb-2"><strong class="text-white">Saturday:</strong> 8:00 AM – 11:00 PM</li>
+                        <li class="mb-2"><strong class="text-white">Sunday:</strong> 8:00 AM – 9:00 PM</li>
+                        <li class="mt-3"><span class="badge bg-warning text-dark"><i class="bi bi-bag-check me-1"></i> Delivery Active</span></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5>Stay Connected</h5>
+                    <p class="small text-muted">Subscribe to get secret menu updates and 10% off your first order!</p>
+                    <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to Aroma Cafe!');">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control form-control-custom bg-dark text-white border-secondary" placeholder="Enter your email" required>
+                            <button class="btn btn-cafe-primary" type="submit"><i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom text-center">
+                <p class="mb-0">&copy; 2026 Aroma Cafe & Restaurant. All Rights Reserved. Crafted with <i class="bi bi-heart-fill text-danger"></i> for Coffee Lovers.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==========================================
+         BACK TO TOP BUTTON
+         ========================================== -->
+    <button id="backToTop" aria-label="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+    <!-- ==========================================
+         ORDER MODAL & TOAST NOTIFICATION
+         ========================================== -->
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4 shadow-lg">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title font-heading fw-bold" id="orderModalLabel">
+                        <i class="bi bi-bag-heart-fill text-warning me-2"></i> Place Your Order
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="bg-light p-3 rounded-3 mb-3 d-flex justify-content-between align-items-center">
+                        <div>
+                            <span class="text-muted small">Selected Item:</span>
+                            <h6 class="mb-0 fw-bold" id="modalItemName">Artisanal Cappuccino</h6>
+                        </div>
+                        <span class="badge bg-warning text-dark fs-6" id="modalItemPrice">$4.50</span>
+                    </div>
+
+                    <form id="confirmOrderForm">
+                        <div class="mb-3">
+                            <label for="orderCustomerName" class="form-label small fw-medium">Your Name</label>
+                            <input type="text" class="form-control form-control-custom" id="orderCustomerName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderPhone" class="form-label small fw-medium">Phone Number</label>
+                            <input type="tel" class="form-control form-control-custom" id="orderPhone" placeholder="Enter phone for pickup updates" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="orderType" class="form-label small fw-medium">Order Type</label>
+                            <select class="form-select form-control-custom" id="orderType">
+                                <option value="dinein">Dine-In (Reserve Table)</option>
+                                <option value="takeaway">Takeaway Pickup</option>
+                                <option value="delivery">Home Delivery</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-cafe-primary w-100 mt-2">
+                            Confirm Order
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Toast Notification -->
+    <div class="toast-container toast-container-custom">
+        <div id="orderToast" class="toast align-items-center text-white bg-success border-0 rounded-4 shadow" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body d-flex align-items-center gap-2">
+                    <i class="bi bi-check-circle-fill fs-4"></i>
+                    <div>
+                        <strong>Order Received!</strong>
+                        <div class="small">We are preparing your fresh coffee & food.</div>
+                    </div>
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap 5 Bundle JS (Includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
